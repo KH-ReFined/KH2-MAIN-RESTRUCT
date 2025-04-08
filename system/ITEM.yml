@@ -69,7 +69,7 @@ Items:
   StatEntry: 0x0050
   Name: 0x5750
   Description: 0x5751
-  Slot: 0x0138
+  Slot: 0xAD90
   Picture: 420
   Icon2: 0x04
   InsertAfter: 0x002B
@@ -79,7 +79,7 @@ Items:
   StatEntry: 0x0050
   Name: 0x5752
   Description: 0x5753
-  Slot: 0x0139
+  Slot: 0xAD91
   Picture: 421
   Icon2: 0x04
   InsertAfter: 0x0300

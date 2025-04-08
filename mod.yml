@@ -6,6 +6,11 @@ assets:
 
 # === System Files === #
 
+- name: reFined-v3.bin
+  method: copy
+  source:
+  - name: reFined-v3.bin
+
 - name: 00objentry.bin
   type: list
   method: listpatch
@@ -38,11 +43,6 @@ assets:
     method: copy
     source:
     - name: system/MEMT
-  - name: went
-    type: list
-    method: copy
-    source:
-    - name: system/WENT
   - name: trsr
     type: list
     method: listpatch
@@ -268,6 +268,12 @@ assets:
   source:
   - name: menu/us/camp.2ld
 
+- name: menu/us/title_fast.2ld
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: menu/us/title_fast.2ld
+
 # === Field Elements === #
 
 - name: field2d/us/zz0command.2dd
@@ -292,9 +298,9 @@ assets:
 # === Item Pictures === #
 
 - name: itempic/item-269.imd
+  method: copy
   multi:
   - name: itempic/item-271.imd
-  method: copy
   source:
   - name: itempic/item-xxx.imd
 
@@ -1140,12 +1146,12 @@ assets:
   source:
   - name: remastered/shopface/p_ca100.bin/-0.png
 
-- name: remastered/itempic/item-269.dds
-  mehtod: copy
+- name: remastered/itempic/item-269.imd/-0.dds
+  method: copy
   source:
   - name: remastered/itempic/item-269.dds
-- name: remastered/itempic/item-271.dds
-  mehtod: copy
+- name: remastered/itempic/item-271.imd/-0.dds
+  method: copy
   source:
   - name: remastered/itempic/item-271.dds
 
@@ -1201,11 +1207,71 @@ assets:
   source:
   - name: remastered/fieldelems/zz0command.2dd/IT.png
 
+- name: remastered/menu/us/title_fast.2ld/US_title_2ld0.png
+  method: copy
+  multi:
+  - name: remastered/menu/gr/title_fast.2ld/US_title_2ld0.png
+  - name: remastered/menu/fr/title_fast.2ld/US_title_2ld0.png
+  - name: remastered/menu/it/title_fast.2ld/US_title_2ld0.png
+  - name: remastered/menu/sp/title_fast.2ld/US_title_2ld0.png
+  source:
+  - name: remastered/menu/us/titlescreen/-0.png
+- name: remastered/menu/us/title_fast.2ld/US_title_2ld1.png
+  method: copy
+  multi:
+  - name: remastered/menu/gr/title_fast.2ld/US_title_2ld1.png
+  - name: remastered/menu/fr/title_fast.2ld/US_title_2ld1.png
+  - name: remastered/menu/it/title_fast.2ld/US_title_2ld1.png
+  - name: remastered/menu/sp/title_fast.2ld/US_title_2ld1.png
+  source:
+  - name: remastered/menu/us/titlescreen/-1.png
+- name: remastered/menu/us/title_fast.2ld/US_title_2ld2.png
+  method: copy
+  multi:
+  - name: remastered/menu/gr/title_fast.2ld/US_title_2ld2.png
+  - name: remastered/menu/fr/title_fast.2ld/US_title_2ld2.png
+  - name: remastered/menu/it/title_fast.2ld/US_title_2ld2.png
+  - name: remastered/menu/sp/title_fast.2ld/US_title_2ld2.png
+  source:
+  - name: remastered/menu/us/titlescreen/-2.png
+- name: remastered/menu/us/title_fast.2ld/US_title_2ld3.png
+  method: copy
+  multi:
+  - name: remastered/menu/gr/title_fast.2ld/US_title_2ld3.png
+  - name: remastered/menu/fr/title_fast.2ld/US_title_2ld3.png
+  - name: remastered/menu/it/title_fast.2ld/US_title_2ld3.png
+  - name: remastered/menu/sp/title_fast.2ld/US_title_2ld3.png
+  source:
+  - name: remastered/menu/us/titlescreen/-3.png
+- name: remastered/menu/us/title_fast.2ld/US_title_2ld4.png
+  method: copy
+  multi:
+  - name: remastered/menu/gr/title_fast.2ld/US_title_2ld4.png
+  - name: remastered/menu/fr/title_fast.2ld/US_title_2ld4.png
+  - name: remastered/menu/it/title_fast.2ld/US_title_2ld4.png
+  - name: remastered/menu/sp/title_fast.2ld/US_title_2ld4.png
+  source:
+  - name: remastered/menu/us/titlescreen/-4.png
+- name: remastered/menu/us/title_fast.2ld/US_title_2ld5.png
+  method: copy
+  multi:
+  - name: remastered/menu/gr/title_fast.2ld/US_title_2ld5.png
+  - name: remastered/menu/fr/title_fast.2ld/US_title_2ld5.png
+  - name: remastered/menu/it/title_fast.2ld/US_title_2ld5.png
+  - name: remastered/menu/sp/title_fast.2ld/US_title_2ld5.png
+  source:
+  - name: remastered/menu/us/titlescreen/-5.png
 - name: remastered/menu/us/title.2ld/US_title_2ld8.png
   multi:
   - name: remastered/menu/us/title.2ld/US_title_2ld9.png
   - name: remastered/menu/us/title.2ld/US_title_2ld10.png
   - name: remastered/menu/us/title.2ld/US_title_2ld11.png
+  - name: remastered/menu/us/title_fast.2ld/US_title_2ld6.png
+  - name: remastered/menu/us/title_fast.2ld/US_title_2ld7.png
+  - name: remastered/menu/us/title_fast.2ld/US_title_2ld8.png
+  - name: remastered/menu/us/title_fast.2ld/US_title_2ld9.png
+  - name: remastered/menu/us/title_fast.2ld/US_title_2ld10.png
+  - name: remastered/menu/us/title_fast.2ld/US_title_2ld11.png
   method: copy
   source:
   - name: remastered/menu/us/titlescreen/US.png
