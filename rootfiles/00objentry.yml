@@ -196,18 +196,6 @@
   Page: 18
   ObjectShadowSize: SmallShadow
   ObjectForm: Default
-0x0A14:
-  ObjectId: 0x0A14
-  ObjectType: PLAYER
-  WeaponJoint: 18
-  ModelName: P_EX220_CA
-  AnimationName: P_EX220.mset
-  ObjectTargetType: M
-  NeoStatus: 4
-  NeoMoveset: 28
-  Weight: 100
-  ObjectShadowSize: MiddleShadow
-  ObjectForm: Default
 0x0A15:
   ObjectId: 0x0A15
   ObjectType: NPC
@@ -217,6 +205,36 @@
   ObjectTargetType: M
   ObjectShadowSize: SmallShadow
   ObjectForm: Default
+0x0A16:
+  ObjectId: 0x0A16
+  ObjectType: RTN
+  WeaponJoint: 2
+  ModelName: P_EX020_CA_RTN
+  AnimationName: P_EX020_RTN.mset
+  ObjectTargetType: M
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 500
+  Page: 16
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  NoApdx: true
+  Scissoring: true
+0x0A17:
+  ObjectId: 0x0A17
+  ObjectType: RTN
+  WeaponJoint: 3
+  ModelName: P_EX030_CA_RTN
+  AnimationName: P_EX030_RTN.mset
+  ObjectTargetType: M
+  NeoStatus: 0
+  NeoMoveset: 0
+  Weight: 500
+  Page: 16
+  ObjectShadowSize: SmallShadow
+  ObjectForm: Default
+  NoApdx: true
+  Scissoring: true
 
 # === Sephiroth Absent Silhouette === #
 
