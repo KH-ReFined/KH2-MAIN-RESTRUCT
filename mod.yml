@@ -202,6 +202,53 @@ assets:
     - name: textfiles/ca.yml
       language: gr
 
+- name: msg/us/hb.bar
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: textfiles/hb.yml
+      language: en
+- name: msg/fr/hb.bar
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: textfiles/hb.yml
+      language: fr
+- name: msg/sp/hb.bar
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: textfiles/hb.yml
+      language: sp
+- name: msg/it/hb.bar
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: textfiles/hb.yml
+      language: it
+- name: msg/gr/hb.bar
+  method: binarc
+  source:
+  - name: hb
+    type: list
+    method: kh2msg
+    source:
+    - name: textfiles/hb.yml
+      language: gr
+
+
 # === Shopface Files === #
 
 - name: menu/shopface/p_ca020.bin
@@ -306,11 +353,11 @@ assets:
 
 # === Libretto Files === #
 
-- name: libretto/libretto-ca.bar
+- name: libretto-ca.bar
   method: copy
   source:
   - name: libretto/libretto-ca.bar
-- name: libretto/libretto-hb.bar
+- name: libretto-hb.bar
   method: copy
   source:
   - name: libretto/libretto-hb.bar
@@ -362,6 +409,399 @@ assets:
   method: copy
   source:
   - name: mapscripts/hb01.ard
+
+# === Cutscenes === #
+
+- name: ard/us/ca00.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca00.ard
+  - name: ard/fr/ca00.ard
+  - name: ard/gr/ca00.ard
+  - name: ard/it/ca00.ard
+  - name: ard/sp/ca00.ard
+  - name: ard/uk/ca00.ard
+  source:
+  - name: '101'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca00-101.event
+  - name: '202'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca00-202.event
+- name: ard/us/ca01.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca01.ard
+  - name: ard/fr/ca01.ard
+  - name: ard/gr/ca01.ard
+  - name: ard/it/ca01.ard
+  - name: ard/sp/ca01.ard
+  - name: ard/uk/ca01.ard
+  source:
+  - name: '102'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-102.event
+  - name: '103'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-103.event
+  - name: '104'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-104.event
+  - name: '203'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-203.event
+  - name: '204'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-204.event
+  - name: '215'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-215.event
+- name: ard/us/ca02.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca02.ard
+  - name: ard/fr/ca02.ard
+  - name: ard/gr/ca02.ard
+  - name: ard/it/ca02.ard
+  - name: ard/sp/ca02.ard
+  - name: ard/uk/ca02.ard
+  source:
+  - name: '105'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca02-105.event
+  - name: '106'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca02-106.event
+- name: ard/us/ca04.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca04.ard
+  - name: ard/fr/ca04.ard
+  - name: ard/gr/ca04.ard
+  - name: ard/it/ca04.ard
+  - name: ard/sp/ca04.ard
+  - name: ard/uk/ca04.ard
+  source:
+  - name: '121'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca04-121.event
+- name: ard/us/ca03.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca03.ard
+  - name: ard/fr/ca03.ard
+  - name: ard/gr/ca03.ard
+  - name: ard/it/ca03.ard
+  - name: ard/sp/ca03.ard
+  - name: ard/uk/ca03.ard
+  source:
+  - name: '111'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca03-111.event
+  - name: '119'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca03-119.event
+  - name: '122'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca03-122.event
+  - name: d00_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca03/D00_.yml
+  - name: d02_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca03/D02_.yml
+  - name: d03_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca03/D03_.yml
+- name: ard/us/ca05.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca05.ard
+  - name: ard/fr/ca05.ard
+  - name: ard/gr/ca05.ard
+  - name: ard/it/ca05.ard
+  - name: ard/sp/ca05.ard
+  - name: ard/uk/ca05.ard
+  source:
+  - name: '205'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-205.event
+  - name: '207'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-207.event
+  - name: '208'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-208.event
+  - name: '212'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-212.event
+  - name: '213'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-213.event
+  - name: '216'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-216.event
+  - name: d01_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D01_.yml
+  - name: d51_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D51_.yml
+  - name: d52_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D52_.yml
+  - name: d54_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D54_.yml
+  - name: d55_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D55_.yml
+- name: ard/us/ca06.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca06.ard
+  - name: ard/fr/ca06.ard
+  - name: ard/gr/ca06.ard
+  - name: ard/it/ca06.ard
+  - name: ard/sp/ca06.ard
+  - name: ard/uk/ca06.ard
+  source:
+  - name: '206'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca06-206.event
+  - name: d53_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca06/D53_.yml
+- name: ard/us/ca07.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca07.ard
+  - name: ard/fr/ca07.ard
+  - name: ard/gr/ca07.ard
+  - name: ard/it/ca07.ard
+  - name: ard/sp/ca07.ard
+  - name: ard/uk/ca07.ard
+  source:
+  - name: '120'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca07-120.event
+- name: ard/us/ca08.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca08.ard
+  - name: ard/fr/ca08.ard
+  - name: ard/gr/ca08.ard
+  - name: ard/it/ca08.ard
+  - name: ard/sp/ca08.ard
+  - name: ard/uk/ca08.ard
+  source:
+  - name: '125'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca08-125.event
+  - name: '126'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca08-126.event
+- name: ard/us/ca09.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca09.ard
+  - name: ard/fr/ca09.ard
+  - name: ard/gr/ca09.ard
+  - name: ard/it/ca09.ard
+  - name: ard/sp/ca09.ard
+  - name: ard/uk/ca09.ard
+  source:
+  - name: '114'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca09-114.event
+  - name: '115'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca09-115.event
+- name: ard/us/ca10.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca10.ard
+  - name: ard/fr/ca10.ard
+  - name: ard/gr/ca10.ard
+  - name: ard/it/ca10.ard
+  - name: ard/sp/ca10.ard
+  - name: ard/uk/ca10.ard
+  source:
+  - name: '123'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca10-123.event
+  - name: '124'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca10-124.event
+- name: ard/us/ca11.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca11.ard
+  - name: ard/fr/ca11.ard
+  - name: ard/gr/ca11.ard
+  - name: ard/it/ca11.ard
+  - name: ard/sp/ca11.ard
+  - name: ard/uk/ca11.ard
+  source:
+  - name: '209'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca11-209.event
+  - name: d50_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca11/D50_.yml
+- name: ard/us/ca14.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca14.ard
+  - name: ard/fr/ca14.ard
+  - name: ard/gr/ca14.ard
+  - name: ard/it/ca14.ard
+  - name: ard/sp/ca14.ard
+  - name: ard/uk/ca14.ard
+  source:
+  - name: '210'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca14-210.event
+  - name: '211'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca14-211.event
+- name: ard/us/ca17.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca17.ard
+  - name: ard/fr/ca17.ard
+  - name: ard/gr/ca17.ard
+  - name: ard/it/ca17.ard
+  - name: ard/sp/ca17.ard
+  - name: ard/uk/ca17.ard
+  source:
+  - name: '116'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca17-116.event
+  - name: '116v'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca17-116v.event
+- name: ard/us/ca24.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca24.ard
+  - name: ard/fr/ca24.ard
+  - name: ard/gr/ca24.ard
+  - name: ard/it/ca24.ard
+  - name: ard/sp/ca24.ard
+  - name: ard/uk/ca24.ard
+  source:
+  - name: '107'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca24-107.event
+  - name: '214'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca24-214.event
+- name: ard/us/ca25.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca25.ard
+  - name: ard/fr/ca25.ard
+  - name: ard/gr/ca25.ard
+  - name: ard/it/ca25.ard
+  - name: ard/sp/ca25.ard
+  - name: ard/uk/ca25.ard
+  source:
+  - name: '112'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca25-112.event
 
 # === Object Files === #
 
@@ -586,15 +1026,6 @@ assets:
   method: copy
   source:
   - name: objects/piratefellas/P_EX030_CA.apdx
-- name: obj/P_EX220_CA.a.us
-  multi:
-  - name: obj/P_EX220_CA.a.jp
-  - name: obj/P_EX220_CA.a.de
-  - name: obj/P_EX220_CA.a.es
-  - name: obj/P_EX220_CA.a.bg
-  method: copy
-  source:
-  - name: objects/piratefellas/P_EX220_CA.apdx
 
 # === Tutorial Images === #x
 
@@ -780,10 +1211,14 @@ assets:
   method: copy
   source:
   - name: objects/piratefellas/P_EX030_CA.mdlx
-- name: obj/P_EX220_CA.mdlx
+- name: obj/P_EX020_CA_RTN.mdlx
   method: copy
   source:
-  - name: objects/piratefellas/P_EX220_CA.mdlx
+  - name: objects/piratefellas/P_EX020_CA_RTN.mdlx
+- name: obj/P_EX030_CA_RTN.mdlx
+  method: copy
+  source:
+  - name: objects/piratefellas/P_EX030_CA_RTN.mdlx
 - name: obj/N_EX760_CA.mdlx
   method: copy
   source:
@@ -852,6 +1287,10 @@ assets:
   method: copy
   source:
   - name: remastered/menu/jmface_ca.2ld/-2.dds
+- name: remastered/menu/jmface_ca10.imd/-0.dds
+  method: copy
+  source:
+  - name: remastered/menu/jmface_ca.2ld/-10.dds
 
 - name: menu/us/jiminy.bar
   multi:
@@ -1078,27 +1517,39 @@ assets:
   - name: remastered/objects/piratesora/P_EX100_CA_HTLF.mdlx/-2.dds
 
 - name: remastered/obj/P_EX020_CA.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX020_CA_RTN.mdlx/-0.dds
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX020_CA.mdlx/-0.dds
 - name: remastered/obj/P_EX020_CA.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX020_CA_RTN.mdlx/-1.dds
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX020_CA.mdlx/-1.dds
 - name: remastered/obj/P_EX020_CA.mdlx/-2.dds
+  multi:
+  - name: remastered/obj/P_EX020_CA_RTN.mdlx/-2.dds
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX020_CA.mdlx/-2.dds
 
 - name: remastered/obj/P_EX030_CA.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX030_CA_RTN.mdlx/-0.dds
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX030_CA.mdlx/-0.dds
 - name: remastered/obj/P_EX030_CA.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX030_CA_RTN.mdlx/-1.dds
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX030_CA.mdlx/-1.dds
 - name: remastered/obj/P_EX030_CA.mdlx/-2.dds
+  multi:
+  - name: remastered/obj/P_EX030_CA_RTN.mdlx/-2.dds
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX030_CA.mdlx/-2.dds
@@ -1119,19 +1570,6 @@ assets:
   method: copy
   source:
   - name: remastered/objects/piratefellas/N_EX760_CA.mdlx/-3.dds
-
-- name: remastered/obj/P_EX220_CA.mdlx/-0.dds
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.mdlx/-0.dds
-- name: remastered/obj/P_EX220_CA.mdlx/-1.dds
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.mdlx/-1.dds
-- name: remastered/obj/P_EX220_CA.mdlx/-2.dds
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.mdlx/-2.dds
 
 - name: remastered/menu/shopface/p_ca020.bin/-0.png
   method: copy
@@ -2023,10 +2461,10 @@ assets:
   - name: remastered/objects/soraapdx/P_EX100_HTLF.apdx/-hudPIRATE.dds
 - name: remastered/obj/P_EX100_CA_ULTF.a.us/-10.dds
   multi:
-  - name: remastered/obj/P_EX100_CA_UTLF.a.jp/-10.dds
-  - name: remastered/obj/P_EX100_CA_UTLF.a.de/-10.dds
-  - name: remastered/obj/P_EX100_CA_UTLF.a.es/-10.dds
-  - name: remastered/obj/P_EX100_CA_UTLF.a.bg/-10.dds
+  - name: remastered/obj/P_EX100_CA_ULTF.a.jp/-10.dds
+  - name: remastered/obj/P_EX100_CA_ULTF.a.de/-10.dds
+  - name: remastered/obj/P_EX100_CA_ULTF.a.es/-10.dds
+  - name: remastered/obj/P_EX100_CA_ULTF.a.bg/-10.dds
   package: kh2_sixth
   method: copy
   source:
@@ -2123,106 +2561,6 @@ assets:
   method: copy
   source:
   - name: remastered/objects/piratefellas/P_EX030_CA.apdx/-2.dds
-
-- name: remastered/obj/P_EX220_CA.a.us/-0.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-0.png
-  - name: remastered/obj/P_EX220_CA.a.de/-0.png
-  - name: remastered/obj/P_EX220_CA.a.es/-0.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-0.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-0.png
-- name: remastered/obj/P_EX220_CA.a.us/-1.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-1.png
-  - name: remastered/obj/P_EX220_CA.a.de/-1.png
-  - name: remastered/obj/P_EX220_CA.a.es/-1.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-1.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-1.png
-- name: remastered/obj/P_EX220_CA.a.us/-2.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-2.png
-  - name: remastered/obj/P_EX220_CA.a.de/-2.png
-  - name: remastered/obj/P_EX220_CA.a.es/-2.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-2.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-2.png
-- name: remastered/obj/P_EX220_CA.a.us/-3.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-3.png
-  - name: remastered/obj/P_EX220_CA.a.de/-3.png
-  - name: remastered/obj/P_EX220_CA.a.es/-3.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-3.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-3.png
-- name: remastered/obj/P_EX220_CA.a.us/-4.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-4.png
-  - name: remastered/obj/P_EX220_CA.a.de/-4.png
-  - name: remastered/obj/P_EX220_CA.a.es/-4.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-4.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-4.png
-- name: remastered/obj/P_EX220_CA.a.us/-5.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-5.png
-  - name: remastered/obj/P_EX220_CA.a.de/-5.png
-  - name: remastered/obj/P_EX220_CA.a.es/-5.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-5.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-5.png
-- name: remastered/obj/P_EX220_CA.a.us/-6.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-6.png
-  - name: remastered/obj/P_EX220_CA.a.de/-6.png
-  - name: remastered/obj/P_EX220_CA.a.es/-6.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-6.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-6.png
-- name: remastered/obj/P_EX220_CA.a.us/-7.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-7.png
-  - name: remastered/obj/P_EX220_CA.a.de/-7.png
-  - name: remastered/obj/P_EX220_CA.a.es/-7.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-7.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-7.png
-- name: remastered/obj/P_EX220_CA.a.us/-8.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-8.png
-  - name: remastered/obj/P_EX220_CA.a.de/-8.png
-  - name: remastered/obj/P_EX220_CA.a.es/-8.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-8.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-8.png
-- name: remastered/obj/P_EX220_CA.a.us/-9.png
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/-9.png
-  - name: remastered/obj/P_EX220_CA.a.de/-9.png
-  - name: remastered/obj/P_EX220_CA.a.es/-9.png
-  - name: remastered/obj/P_EX220_CA.a.bg/-9.png
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/-9.png
-- name: remastered/obj/P_EX220_CA.a.us/voice/battle/us/micky
-  multi:
-  - name: remastered/obj/P_EX220_CA.a.jp/voice/battle/us/micky
-  - name: remastered/obj/P_EX220_CA.a.de/voice/battle/us/micky
-  - name: remastered/obj/P_EX220_CA.a.es/voice/battle/us/micky
-  - name: remastered/obj/P_EX220_CA.a.bg/voice/battle/us/micky
-  method: copy
-  source:
-  - name: remastered/objects/piratefellas/P_EX220_CA.apdx/voice/battle/us/micky
 
 - name: remastered/obj/F_CZ240.a.us/-0.dds
   method: copy
